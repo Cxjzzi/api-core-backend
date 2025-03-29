@@ -11,20 +11,26 @@ export default defineConfig([
   pluginReact.configs.flat.recommended,
 ]);
 
+// eslint.config.mjs
 export default [
   {
+    ignores: ["**/node_modules/**"],
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
+      ecmaVersion: "latest",
+      sourceType: "module",
       globals: {
-        require: 'readonly',
-        module: 'readonly',
-        exports: 'readonly',
-        process: 'readonly',
-        __dirname: 'readonly',
+        require: "readonly",
+        module: "readonly",
+        exports: "readonly",
+        process: "readonly",
+        __dirname: "readonly",
       },
     },
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    },
     rules: {
+      // Add your custom ESLint rules here
     },
   },
 ];
