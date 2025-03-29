@@ -18,7 +18,8 @@ export default [
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
-      globals: {
+      globals:{
+        ...globals.node,
         require: "readonly",
         module: "readonly",
         exports: "readonly",
