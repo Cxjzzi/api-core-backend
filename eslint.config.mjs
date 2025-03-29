@@ -19,7 +19,7 @@ export default [
       reportUnusedDisableDirectives: true,
     },
     rules: {
-      // Custom rules 
+      "no-unused-vars": "off",
     },
   },
 ];
