@@ -13,7 +13,6 @@ export default defineConfig([
 
 export default [
   {
-    ignores: ['**/node_modules/**'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -22,14 +21,10 @@ export default [
         module: 'readonly',
         exports: 'readonly',
         process: 'readonly',
-        __dirname: 'readonly'
-      }
-    },
-    linterOptions: {
-      reportUnusedDisableDirectives: true,
+        __dirname: 'readonly',
+      },
     },
     rules: {
-      // Add rules here if you want
     },
-  }
+  },
 ];
