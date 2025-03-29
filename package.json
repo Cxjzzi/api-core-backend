@@ -8,6 +8,8 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
+    "lint": "eslint ."
+
   },
   "keywords": [],
   "author": "",
