@@ -7,7 +7,7 @@ export default [
       ecmaVersion: "latest",
       sourceType: "module",
       globals: {
-        ...globals.node,
+        ...globals.node, // 
         require: "readonly",
         module: "readonly",
         exports: "readonly",
@@ -19,8 +19,7 @@ export default [
       reportUnusedDisableDirectives: true,
     },
     rules: {
-      // Add your custom ESLint rules here if needed
+      // Custom rules 
     },
   },
 ];
-
